@@ -1,0 +1,87 @@
+*{
+    font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+    height: 650px;
+    background-image: url(images/hero-back-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 5%;
+}
+.logo-div{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-div img{
+    height: 100px;
+    width: 200px;
+    transform: rotate(-3deg);
+}
+.menu-toggle ,#menu-toggle{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff5f2;
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.22);
+  z-index: 22;
+}
+
+label.logo {
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 30px;
+  font-weight: 700;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  padding: 7px 13px;
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+.menu a.active,
+.menu a:hover {
+  border-bottom: 2px solid var(--clr-primary);
+  transition: 0.3s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
